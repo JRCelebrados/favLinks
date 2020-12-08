@@ -1,15 +1,11 @@
-import React from 'react';
-// import Table from './Table';
+import React, { Component } from 'react';
+import Table from './Table';
 // import Form from './Form';
 
 class LinkContainer extends React.Component {
     constructor(props){
         super(props)
         /* TODO - Create state object for storing favLinks */
-
-        this.state = {
-
-        };
     }
 
     removeCharacter = index => {
@@ -32,6 +28,10 @@ class LinkContainer extends React.Component {
                 <p>Add a new url with a name and link to the table.</p>
                 {/*TODO - Add Table Component */}
 
+                <Table />
+
+                <br/>
+
                 <h3>Add New</h3>
                 {/*TODO - Add Form Component */}
             </div>
@@ -40,5 +40,3 @@ class LinkContainer extends React.Component {
 }
 
 export default LinkContainer;
-
-ReactDOM.render(<LinkContainer />, document.getElementById('root'));

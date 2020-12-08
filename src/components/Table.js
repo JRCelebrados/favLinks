@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TableHeader = () => { 
+const TableHeader = () => {
     // boilerplate table header functional component
     return (
         <thead>
@@ -13,8 +13,8 @@ const TableHeader = () => {
     );
 }
 
-const TableBody = props => { 
-    // boilerplate table body functional component 
+const TableBody = props => {
+    // boilerplate table body functional component
     // we use Array.map to create table rows from LinkData passed via props
     const rows = props.linkData.map((row, index) => {
         return (
@@ -30,8 +30,16 @@ const TableBody = props => {
 }
 
 const Table = (props) => {
-//    const { linkData, removeLink } = props;
+
+   const { linkData, removeLink } = props;
     {/*TODO - return <table> component, TableHeader and TableBody  */}
+
+    return (
+      <table>
+        <TableHeader />
+        <TableBody />
+      </table>
+    )
 
 }
 
